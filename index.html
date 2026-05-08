@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yevhen Tiutiunnyk — Full Stack Developer</title>
+  <meta name="description" content="Yevhen Tiutiunnyk — Full Stack Developer based in Amsterdam. A 3D gallery walkthrough portfolio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="scene"></canvas>
+
+  <div class="loader" id="loader">
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+    <div class="loader-text">Entering gallery</div>
+  </div>
+
+  <nav class="nav">
+    <a href="#hero" class="nav-brand">— Yevhen <em>/FullStack</em></a>
+    <ul class="nav-links">
+      <li><a href="#hero" data-section="0">I · Atrium</a></li>
+      <li><a href="#about" data-section="1">II · About</a></li>
+      <li><a href="#skills" data-section="2">III · Craft</a></li>
+      <li><a href="#projects" data-section="3">IV · Works</a></li>
+      <li><a href="#contact" data-section="4">V · Contact</a></li>
+    </ul>
+  </nav>
+
+  <aside class="progress">
+    <div class="progress-bar"><div class="progress-fill"></div></div>
+    <div class="progress-label"><span class="current-room">I</span> &nbsp;/&nbsp; V</div>
+  </aside>
+
+  <main class="content">
+    <section id="hero" class="section section-hero">
+      <div class="container">
+        <p class="eyebrow">Yevhen Tiutiunnyk · Full Stack Developer · MMXXVI</p>
+        <h1 class="display">Hello —<br>I'm <em>Yevhen.</em></h1>
+        <p class="lede">A 19-year-old full-stack developer from Ukraine, currently in my second year of studies in Amsterdam. I build web applications end-to-end — interfaces, services, and the parts in between. Move with your scroll.</p>
+        <div class="actions">
+          <a class="btn" href="#projects">Enter the gallery →</a>
+          <a class="btn-ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="scroll-hint">Scroll to walk &nbsp;·&nbsp; ↓</div>
+    </section>
+
+    <section id="about" class="section section-about">
+      <div class="container">
+        <p class="eyebrow">II · About</p>
+        <h2 class="display-sm">Two years <em>deep</em><br>into building<br>for the web.</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I'm a full-stack developer from Ukraine, now in my second year of studies in Amsterdam. I build web applications end-to-end and care about clean code, thoughtful interfaces, and the parts of software that take time to get right.</p>
+            <p>Most weeks I'm balancing coursework with side experiments — building, breaking, and rebuilding small projects to understand how the stack actually fits together.</p>
+          </div>
+          <ul class="stats">
+            <li><span class="stat-num" data-target="2">0</span><span class="stat-label">Projects built</span></li>
+            <li><span class="stat-num" data-target="2">0</span><span class="stat-label">Years studying</span></li>
+            <li><span class="stat-num" data-target="1">0</span><span class="stat-label">Client shipped for</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-skills">
+      <div class="container">
+        <p class="eyebrow">III · Craft</p>
+        <h2 class="display-sm">Three pedestals.<br><em>One discipline.</em></h2>
+        <div class="skills-grid">
+          <article class="pedestal">
+            <header><span class="ped-num">01</span><h3>Frontend</h3></header>
+            <ul>
+              <li>React · Next.js · Vue</li>
+              <li>TypeScript</li>
+              <li>Three.js · WebGL · GSAP</li>
+              <li>Tailwind · CSS architecture</li>
+              <li>Accessibility · perf budgets</li>
+            </ul>
+          </article>
+          <article class="pedestal">
+            <header><span class="ped-num">02</span><h3>Backend</h3></header>
+            <ul>
+              <li>Node.js · Python · Go</li>
+              <li>PostgreSQL · MongoDB · Redis</li>
+              <li>GraphQL · REST · WebSockets</li>
+              <li>Auth, billing, queues</li>
+              <li>Event-driven architectures</li>
+            </ul>
+          </article>
+          <article class="pedestal">
+            <header><span class="ped-num">03</span><h3>Infrastructure</h3></header>
+            <ul>
+              <li>Docker · Kubernetes</li>
+              <li>AWS · GCP · Cloudflare</li>
+              <li>CI / CD · Terraform</li>
+              <li>Observability · SLOs</li>
+              <li>Cost &amp; reliability tuning</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-projects">
+      <div class="container">
+        <p class="eyebrow">IV · Highlights</p>
+        <h2 class="display-sm">Four <em>exhibits.</em></h2>
+        <div class="works">
+          <article class="work">
+            <div class="work-num">01</div>
+            <div class="work-body">
+              <h3>Coursework Portfolio</h3>
+              <p>Full-stack assignments built across two years of study — from first HTML pages to applications with authentication, databases, and deployed services.</p>
+              <p class="work-tags">HTML · CSS · JavaScript · SQL</p>
+            </div>
+            <a class="work-link" href="https://github.com/YevhenTiutiunnyk" target="_blank" rel="noopener">View →</a>
+          </article>
+          <article class="work">
+            <div class="work-num">02</div>
+            <div class="work-body">
+              <h3>Personal Experiments</h3>
+              <p>Side projects built outside the curriculum — small tools and explorations to learn frameworks the school doesn't cover yet.</p>
+              <p class="work-tags">React · Node.js · APIs</p>
+            </div>
+            <a class="work-link" href="https://github.com/YevhenTiutiunnyk" target="_blank" rel="noopener">View →</a>
+          </article>
+          <article class="work">
+            <div class="work-num">03</div>
+            <div class="work-body">
+              <h3>First Client Project</h3>
+              <p>My first paid engagement — a web project shipped end-to-end for a real user, with the lessons that only come from delivering for someone outside the classroom.</p>
+              <p class="work-tags">Full-Stack · Production</p>
+            </div>
+            <a class="work-link" href="mailto:yevhen.tuk@gmail.com">Ask me →</a>
+          </article>
+          <article class="work">
+            <div class="work-num">04</div>
+            <div class="work-body">
+              <h3>Open Source &amp; Notes</h3>
+              <p>Repositories, snippets, and study notes published on GitHub. Public proof of work — kept in the open as I learn.</p>
+              <p class="work-tags">GitHub · Open Source</p>
+            </div>
+            <a class="work-link" href="https://github.com/YevhenTiutiunnyk" target="_blank" rel="noopener">View →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-contact">
+      <div class="container">
+        <p class="eyebrow">V · Contact</p>
+        <h2 class="display-sm">Let's build<br><em>something.</em></h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p>Open to full-stack work, internships, and collaborations. I read every message and try to reply within a day.</p>
+            <ul class="contact-list">
+              <li><span>email</span><a href="mailto:yevhen.tuk@gmail.com">yevhen.tuk@gmail.com</a></li>
+              <li><span>github</span><a href="https://github.com/YevhenTiutiunnyk" target="_blank" rel="noopener">@YevhenTiutiunnyk</a></li>
+              <li><span>telegram</span><a href="https://t.me/jekatiu" target="_blank" rel="noopener">@jekatiu</a></li>
+              <li><span>location</span><span class="contact-val">Amsterdam, NL</span></li>
+            </ul>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <label><span>Name</span><input type="text" name="name" required></label>
+            <label><span>Email</span><input type="email" name="email" required></label>
+            <label><span>Message</span><textarea rows="4" name="message" required></textarea></label>
+            <button type="submit">Send the message →</button>
+          </form>
+        </div>
+        <p class="footer">© MMXXVI · Yevhen Tiutiunnyk · Built with Three.js, GSAP &amp; Lenis</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
